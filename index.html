@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Drag & Drop | Проект 2</title>
+  </head>
+
+    <div class="main-container">
+
+			<!-- Admin interface -->
+
+			<div class="container hide" id="sign-in-admin" data-container>
+				<div class="row">
+					<div class="col-header start pointer btn--hover" data-shop-and-shop-list-and-admin="shop">Магазин &#128722;</div>
+					<div class="col-header start pointer active btn--hover" data-shop-and-shop-list-and-admin="sign-in-admin">Админка</div>
+					<div class="col-header progress pointer btn--hover" data-shop-and-shop-list-and-admin="shopping-list">Список покупок &#128195;</div>
+				</div>
+				<div class="row">
+					<div class="form-error" id="form-error-admin">
+	
+					</div>
+				</div>
+				<div class="row">
+					<form action="" class="form-product" id="form-sign-in-admin" style="flex-direction: column; align-items: center;">
+						<input type="text" id="field-login-admin" placeholder="Введите логин">
+						<input type="password" id="field-password-admin" placeholder="Введите пароль">
+
+						<button class="btn-product pointer" data-sign-in-admin="room-admin">Войти в админку</button>
+					</form>
+				</div>
+
+
+			</div> <!-- ./container (sign-in-admin) -->
+
+			<div class="container hide" id="room-admin" data-container>
+				<div class="row">
+					<div class="col-header start pointer btn--hover" data-shop-and-shop-list-and-admin="shop">Магазин &#128722;</div>
+					<div class="col-header start pointer active btn--hover" data-shop-and-shop-list-and-admin="sign-in-admin">Админка</div>
+					<div class="col-header progress pointer btn--hover" data-shop-and-shop-list-and-admin="shopping-list">Список покупок &#128195;</div>
+				</div>
+				<div class="row">
+					<div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+						<h1 style="color: #229efd;">Вы в админке</h1>
+						<h1 style="color: #229efd;">Форма добавления продуктов:</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-error" id="form-error-room-admin">
+	
+					</div>
+				</div>
+				<div class="row">
+					<form action="" class="form-product" id="form-room-admin" style="flex-direction: column; align-items: center;">
+						<input type="text" id="field-name-product" placeholder="Введите название продукта">
+						<input type="number" id="field-price-product" placeholder="Введите цену продукта">
+
+						<button class="btn-product pointer" id="button-adding-product-in-shop">Добавить продукт в магазин</button>
+					</form>
+				</div>
+				<div class="row">
+					<div style="width: 100%; display: flex; text-align: center;">
+						<p>🍏, 🍎, 🍐, 🍊, 🍋, 🍌, 🍉, 🍇, 🍓, 🍈, 🍒, 🥭, 🍍, 🥥, 🥝, 🍅, 🥑, 🍆, 🥒, 🥬, 🥦, 🧄, 🧅, 🌽, 🥕, 🥗, 🥔, 🍠, 🌰, 🥜, 🍯, 🍞, 🥐, 🥖, 🥨, 🥯, 🥞, 🧇, 🧀, 🍗, 🍖, 🥩, 🍤, 🥚, 🍳, 🥓, 🍔, 🍟, 🌭, 🍕, 🍝, 🥪, 🌮, 🌯, 🥙, 🧆, 🍜, 🥘, 🍲, 🥫, 🧂, 🧈, 🍥, 🍣, 🍱, 🍛, 🍙, 🍚, 🍘, 🥟, 🍢, 🍡, 🍧, 🍨, 🍦, 🍰, 🎂, 🧁, 🥧, 🍮, 🍭, 🍬, 🍫, 🍿, 🍩, 🍪, 🥠, 🥮, ☕, 🍵, 🥣, 🍼, 🥤, 🧃, 🧉, 🥛, 🍺, 🍻, 🍷, 🥂, 🥃, 🍸, 🍹, 🍾, 🍶, 🧊, 🥄, 🍴, 🍽, 🥢, 🥡</p>
+					</div>
+				</div>
+			</div> <!-- ./container (room-admin) -->
+
+			<!-- User interface -->
+
+			<div class="container shopping-list" id="shopping-list" data-container>
+				<div class="row">
+					<div class="col-header start pointer btn--hover" data-shop-and-shop-list-and-admin="shop">Магазин &#128722;</div>
+					<div class="col-header start pointer btn--hover" data-shop-and-shop-list-and-admin="sign-in-admin">Админка</div>
+					<div class="col-header progress pointer active btn--hover" data-shop-and-shop-list-and-admin="shopping-list">Список покупок &#128195;</div>
+				</div>
+				<div class="row">
+					<div class="form-error" id="form-error">
+	
+					</div>
+				</div>
+				<div class="row">
+					<form action="" class="form-product" id="form-product">
+						<input type="number" id="field-money" placeholder="Введите ваш кошелёк (руб)">
+						<input type="text" id="field-product" placeholder="Введите продукт">
+	
+						<button class="btn-product pointer" id="button-add-product">Добавить</button>
+						<button class="btn-product pointer" id="button-delete-product">Удалить сделанные покупки</button>
+					</form>
+				</div>
+				<div class="row">
+					<div class="col-header start">Надо купить</div>
+					<div class="col-header progress">На неделе</div>
+					<div class="col-header progress">Сегодня</div>
+					<div class="col-header done">Куплено</div>
+				</div>
+	
+				<div class="row">
+					<div class="placeholder" id="placeholder" data-placeholder-shopping-list></div>
+					<div class="placeholder" id="placeholder"></div>
+					<div class="placeholder" id="placeholder"></div>
+					<div class="placeholder" id="placeholder" data-placeholder-shopping-delete></div>
+				</div>
+			</div> <!-- ./container (shopping-list) -->
+	
+	
+	
+			<div class="container shop hide" id="shop" data-container>
+				<div class="row">
+					<div class="col-header start pointer active btn--hover" data-shop-and-shop-list-and-admin="shop">Магазин &#128722;</div>
+					<div class="col-header start pointer btn--hover" data-shop-and-shop-list-and-admin="sign-in-admin">Админка</div>
+					<div class="col-header progress pointer btn--hover" data-shop-and-shop-list-and-admin="shopping-list">Список покупок &#128195;</div>
+				</div>
+				<div class="row">
+					<form action="" class="form-product" id="form-product">
+
+						<button class="btn-product pointer" id="button-count-product">Посчитать</button>
+						<button class="btn-product pointer" id="button-buy-product">Купить</button>
+					</form>
+				</div>
+				<div class="row">
+					<div class="form-error" id="form-error-shop">
+	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-header start">Все продукты</div>
+					<div class="col-header progress" id="wallet">Кошелёк</div>
+					<div class="col-header done">Корзина &#128722;</div>
+				</div>
+	
+				<div class="row">
+					<div class="placeholder" id="placeholder" data-placeholder-shop>
+						<div class="item" id="item" draggable="true" data-product="5">Яйцо &#129370; (5)</div>
+						<div class="item" id="item" draggable="true" data-product="15">Помидор &#127813; (15)</div>
+						<div class="item" id="item" draggable="true" data-product="20">Огурец &#129362; (20)</div>
+						<div class="item" id="item" draggable="true" data-product="50">Курица &#127831; (50)</div>
+						<div class="item" id="item" draggable="true" data-product="5">Хлеб &#127838; (5)</div>
+						<div class="item" id="item" draggable="true" data-product="500">Брокколи &#129382; (500)</div>
+						<div class="item" id="item" draggable="true" data-product="100">Картошка &#129364; (100)</div>
+						<div class="item" id="item" draggable="true" data-product="5">Конфетка &#127852; (5)</div>
+						<div class="item" id="item" draggable="true" data-product="25">Бургер &#127828; (25)</div>
+						<div class="item" id="item" draggable="true" data-product="1000">Ананас	&#127821; (1000)</div>
+						<div class="item" id="item" draggable="true" data-product="10">Яблоко	&#127822; (10)</div>
+						<div class="item" id="item" draggable="true" data-product="120">Суши	&#127843; (120)</div>
+						<div class="item" id="item" draggable="true" data-product="10">Консервы	&#129387; (10)</div>
+						<div class="item" id="item" draggable="true" data-product="10">Сэндвич &#129386; (10)</div>
+						<div class="item" id="item" draggable="true" data-product="50">Мясо &#129385; (50)</div>
+					</div>
+					<div class="placeholder" id="placeholder" data-placeholder-basket></div>
+				</div>
+			</div> <!-- ./container (shop) -->
+		</div> <!-- ./main-container -->
+
+		<script src="app.js"></script>
+  </body>
+</html>

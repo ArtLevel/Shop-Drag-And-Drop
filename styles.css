@@ -1,0 +1,202 @@
+/* General */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+  display: flex;
+  padding-top: 5rem;
+  justify-content: center;
+  margin: 0;
+}
+
+.container {
+	width: 100%;
+	min-width: 1200px;
+	height: auto;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.show {
+	display: flex;
+}
+
+.btn--hover:hover {
+	opacity: 0.8;
+}
+
+.active {
+	background: #33b368!important;
+}
+
+
+/* Row */
+
+.row {
+  width: 1000px;
+	height: auto;
+	display: flex;
+
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+/* Form */
+
+.form-product {
+	width: 100%;
+	height: auto;
+
+	display: flex;
+	justify-content: center;
+
+	row-gap: 10px;
+	column-gap: 10px;
+}
+
+.form-product input{
+	width: 50%;
+
+	padding: 10px;
+	outline: 0;
+
+	font-size: 20px;
+	color: #229efd;
+
+	border: 2px solid #229efd;
+	border-radius: 5px;
+}
+
+.form-product button{
+	padding: 10px;
+	outline: 0;
+
+	font-size: 20px;
+	color: #fff;
+
+	border-radius: 5px;
+	border: 2px solid #229efd;
+	background-color: #229efd;
+
+	transition: all 0.2s linear;
+}
+
+.form-product button:hover {
+	border-radius: 5px;
+	border: 2px solid #176aaa;
+	background-color: #176aaa;
+}
+
+.form-error {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Col */
+
+.col-header {
+  width: 150px;
+
+	padding: 0.8rem 1rem;
+
+	color: #fff;
+	border-radius: 20px;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+}
+
+/* Pointer */
+
+.pointer {
+	cursor: pointer;
+}
+
+/* Item */
+
+.item {
+  width: 150px;
+  height: 66px;
+
+	text-align: center;
+
+	padding: 0.8rem 1rem;
+
+	font-size: 18px;
+	color: #66c359;
+
+	background: #f7f6f7;
+	border-radius: 20px;
+	border: 1px solid #eee;
+  box-shadow: 4px 4px 9px rgba(198, 198, 198, 0.36);
+
+  cursor: grab;
+}
+
+.item:active {
+  cursor: grabbing;
+}
+
+/* Placeholder */
+
+.placeholder {
+  width: 150px;
+  height: auto;
+	min-height: 150px;
+
+	display: flex;
+	flex-direction: column;
+
+	row-gap: 10px;
+
+	border-radius: 20px;
+}
+
+/* Menu */
+
+.start {
+  background: linear-gradient(90deg, #ff85e4 0%, #229efd 179.25%);
+
+	transition: opacity 0.2s linear;
+}
+
+.progress {
+  background: linear-gradient(90deg, #209cff 0%, #68e0cf 100%);
+
+	transition: opacity 0.2s linear;
+}
+
+.done {
+  background: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+
+	transition: opacity 0.2s linear;
+}
+
+/* Hold */
+
+.hold {
+	border: 3px solid #350c67;
+}
+
+/* Hide */
+
+.hide {
+	display: none;
+}
+
+/* Hovered */
+
+.hovered {
+	background: #8ed7ed;
+}
